@@ -1,13 +1,14 @@
-CREATE TABLE `brand` (
-`brandId` INTEGER  zerofill NOT NULL,
-`brandName` TEXT NOT NULL,
-`brandSegment` TEXT DEFAULT NULL,
-`brandMinSqFt` INTEGER DEFAULT NULL,
-`brandChain` TEXT NOT NULL,
-PRIMARY KEY (`brandId`)
+CREATE TABLE brand (
+brandId INTEGER PRIMARY KEY NOT NULL,
+brandName text NOT NULL,
+brandSegment text,
+brandMinSqFt INTEGER,
+brandChain text NOT NULL
 );
 
-INSERT INTO `brand` VALUES (001,'Sofitel','Luxury',350,'Accor'),
+INSERT INTO brand (brandId, brandName, brandSegment, branMinSqFt, brandChain)
+VALUES
+(001,'Sofitel','Luxury',350,'Accor'),
 (002,'Thalassa','Luxury',235,'Accor'),
 (003,'Banyan Tree','Luxury',517,'Banyan Tree Holdings'),
 (004,'Quorvus Collection','Luxury',NULL,'Carlson Rezidor Hotel Group'),
