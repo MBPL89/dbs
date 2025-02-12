@@ -6,7 +6,7 @@ brandMinSqFt INTEGER,
 brandChain text NOT NULL
 );
 
-INSERT INTO brand (brandId, brandName, brandSegment, branMinSqFt, brandChain)
+INSERT INTO brand (brandId, brandName, brandSegment, brandMinSqFt, brandChain)
 VALUES
 (001,'Sofitel','Luxury',350,'Accor'),
 (002,'Thalassa','Luxury',235,'Accor'),
