@@ -16,7 +16,7 @@ FOREIGN KEY (salesRepEmployeeNumber) REFERENCES employees(employeeNumber)
 );
 
 
-INSERT INTO customers 
+INSERT INTO customers (customerNumber, customerName, contactLastName, contactFirstName, phone, addressLine1, addressLine2, city, state, postalCode, country, salesRepEmployeeNumber, creditLimit)
 VALUES 
 (103,"Atelier graphique","Schmitt","Carine ","40.32.2555","54, rue Royale",NULL,"Nantes",NULL,"44000","France",1370,21000),
 (112,"Signal Gift Stores","King","Jean","7025551838","8489 Strong St.",NULL,"Las Vegas","NV","83030","USA",1166,71800),
