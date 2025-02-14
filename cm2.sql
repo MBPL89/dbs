@@ -205,10 +205,11 @@ VALUES
 (496,'Kelly’s Gift Shop','Snowden','Tony','+64 9 5555500','Arenales 1938 3’A’',NULL,'Auckland',NULL,NULL,'New Zealand',1612,110000);
 
 CREATE TABLE payments (
-customerNumber INTEGER PRIMARY KEY NOT NULL,
-checkNumber text PRIMARY KEY NOT NULL,
+customerNumber INTEGER NOT NULL,
+checkNumber text NOT NULL,
 paymentDate date NOT NULL,
 amount REAL NOT NULL,
+PRIMARY KEY (customerNumber, checkNumber)
 FOREIGN KEY (customerNumber) REFERENCES customers(customerNumber)
 );
 
