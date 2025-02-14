@@ -192,7 +192,7 @@ VALUES
 (123,'Kerry Hotels','Upper Midscale',354,'SHA'),
 (124,'element by Westin','Upper Midscale',329,'STA'),
 (125,'Four Points','Upper Midscale',362,'STA'),
-(126,'Citadines Apart\'Hotel','Upper Midscale',367,'THE'),
+(126,'Citadines Apart Hotel','Upper Midscale',367,'THE'),
 (127,'Somerset Serviced Residence','Upper Midscale',371,'THE'),
 (128,'TRYP by Wyndham','Upper Midscale',376,'WYN'),
 (129,'Wyndham Garden Hotels','Upper Midscale',310,'WYN'),
