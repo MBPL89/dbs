@@ -17,7 +17,8 @@ CREATE TABLE cd (
   cdtitle text ,
   cdyear integer,
   lbltitle text,
-FOREIGN KEY (lbltitle) REFERENCES label (lbltitle)
+  FOREIGN KEY (lbltitle) REFERENCES label (lbltitle)
+);
 
 INSERT INTO cd VALUES (1,'A2 1311','Giant Steps',1960,'Atlantic'),
 (2,'83012-2','Swing',1977,'Atlantic');
