@@ -27,7 +27,7 @@ INSERT INTO cd VALUES (1,'A2 1311','Giant Steps',1960,'Atlantic'),
 CREATE TABLE person (
   psnid integer PRIMARY KEY NOT NULL,
   psnfname text ,
-  psnlname text ,
+  psnlname text
   );
 
 
@@ -58,7 +58,7 @@ INSERT INTO person_cd VALUES (1,1,1);
 CREATE TABLE composition (
   compid integer PRIMARY KEY NOT NULL,
   comptitle text NOT NULL,
-  compyear integer ,
+  compyear integer
 );
 
 
