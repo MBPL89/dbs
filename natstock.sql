@@ -1,5 +1,5 @@
 CREATE TABLE nation (
-  natcode text NOT NULL,
+  natcode text PRIMARY KEY NOT NULL,
   natname text,
   exchrate REAL,
   PRIMARY KEY (natcode)
@@ -14,15 +14,13 @@ INSERT INTO nation VALUES ('AUS','Australia',0.46000),
 
 
 CREATE TABLE stock (
-  stkcode text NOT NULL,
+  stkcode text PRIMARY KEY NOT NULL,
   stkfirm text DEFAULT NULL,
   stkprice REAL DEFAULT NULL,
   stkqty REAL DEFAULT NULL,
   stkdiv REAL DEFAULT NULL,
   stkpe REAL DEFAULT NULL,
   natcode text DEFAULT NULL,
-  PRIMARY KEY (stkcode),
-  KEY fk_has_nation (natcode),
   FOREIGN KEY (natcode) REFERENCES nation (natcode)
 );
 
