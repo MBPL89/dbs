@@ -154,7 +154,7 @@ CREATE TABLE track (
   rcdid integer NOT NULL,
   PRIMARY KEY (cdid,trkid,rcdid),
   FOREIGN KEY (cdid) REFERENCES cd (cdid)
-  FOREIGN KEY (rcid) REFERENCES recording (rcid)
+  FOREIGN KEY (rcdid) REFERENCES recording (rcdid)
 );
 
 
