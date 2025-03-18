@@ -1,8 +1,7 @@
 CREATE TABLE nation (
   natcode text PRIMARY KEY NOT NULL,
   natname text,
-  exchrate REAL,
-  PRIMARY KEY (natcode)
+  exchrate REAL
 );
 
 
